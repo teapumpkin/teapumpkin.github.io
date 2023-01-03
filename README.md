@@ -1,1 +1,1 @@
-[Link to blog](https://sunfishstanford.github.io)
+[Link to blog](https://teapumpkin.github.io)
