@@ -1,10 +1,9 @@
-title: Free Energy
+title: Beaver Blog
 author:
-  name: Francis Ho
+  name: Teapumpkin
 description: > # this means to ignore newlines until "show_excerpts:"
-  Sharing ideas and learnings in math, science, and tech
+  Sharing ideas
 
-google_analytics: G-GBR1NQ7ZLF
 show_excerpts: false # set to true to show excerpts on the homepage
 markdown: kramdown
 
@@ -14,13 +13,10 @@ minima:
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
-    mastodon:
-      - username: sunfishstanford
-        instance: hachyderm.io
-    linkedin: francis-ho-b47338
-    github:  sunfishstanford
-    twitter: fho888
+#   social_links:
+#     linkedin: francis-ho-b47338
+#     github:  sunfishstanford
+#     twitter: fho888
 
 
 # If you want to link only specific pages in your header, uncomment
