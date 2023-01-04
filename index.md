@@ -7,7 +7,6 @@
 #
 layout: home
 ---
-{% comment %}
 
 <div id="archives">
 {% for category in site.categories %}
@@ -27,7 +26,7 @@ layout: home
 {% endfor %}
 </div>
 
-{% endcomment %}
+{% comment %}
 
 
 <div id="archives">
@@ -49,6 +48,7 @@ layout: home
 {% endfor %}
 </div>
 
+{% endcomment %}
 
 
 --------
