@@ -13,7 +13,7 @@ layout: home
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first | slugsize }}{% endcapture %}   
-    <div id="#{{ category_name | slugize }}">hellobob-slugize {{ category | slugize }} </div>
+    <div id="#{{ category_name | slugize }}">hellobob-words {{ category | number_of_words }} </div>
     <p></p>
 
     <h3 class="category-head">{{ category_name }}</h3>
