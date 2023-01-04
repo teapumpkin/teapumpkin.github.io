@@ -13,8 +13,8 @@ layout: home
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first | slugsize }}{% endcapture %}    
-    <div id="#{{ category_name | slugize }}">hellobob-slugify-defaut {{ category | slugify: "default" }} </div>
-    <div id="#{{ category_name | slugize }}">hellobob-slugify-raw {{ category | slugify: "raw" }} </div>
+#    <div id="#{{ category_name | slugize }}">hellobob-slugify-defaut {{ category | slugify: "default" }} </div>
+#    <div id="#{{ category_name | slugize }}">hellobob-slugify-raw {{ category | slugify: "raw" }} </div>
     <div id="#{{ category_name | slugize }}">hellobob-slugsize {{ category | slugsize }} </div>
     <div id="#{{ category_name | slugize }}">hellobob-slugize {{ category | slugize }} </div>
     <p></p>
