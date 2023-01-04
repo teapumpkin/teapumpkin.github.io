@@ -7,9 +7,9 @@
 #
 layout: home
 ---
+{% comment %}  
 
 <div id="archives">
-  
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
   <div class="archive-group">
@@ -29,5 +29,6 @@ layout: home
 </div>
 
 --------
+{% endcomment %}  
 
 
