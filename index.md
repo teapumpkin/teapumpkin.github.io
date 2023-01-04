@@ -7,6 +7,7 @@
 #
 layout: home
 ---
+{% comment %}
 
 <div id="archives">
 {% for category in site.categories %}
@@ -26,15 +27,15 @@ layout: home
 {% endfor %}
 </div>
 
-{% comment %}
+{% endcomment %}
 
 
 <div id="archives">
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
   <div class="archive-group">
-    {% capture category_name %}{{ category | first | slugsize }}{% endcapture %}   
-    <div id="#{{ category_name | slugize }}">hellobob-category {{ category }} </div>
+    {% capture category_name %}{{ category | first }}{% endcapture %}   
+    <div id="#{{ category_name | slugize }}">hellobob-category {{ category | slugize }} </div>
     <p></p>
 
     <h3 class="category-head">{{ category_name }}</h3>
@@ -49,7 +50,6 @@ layout: home
 </div>
 
 
-{% endcomment %}
 
 --------
 
