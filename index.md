@@ -16,8 +16,8 @@ layout: home
 {% comment %} 
     <div id="#{{ category_name | slugize }}">hellobob-slugify-defaut {{ category | slugify: "default" }} </div>
     <div id="#{{ category_name | slugize }}">hellobob-slugify-raw {{ category | slugify: "raw" }} </div>
-{% endcomment %}
     <div id="#{{ category_name | slugize }}">hellobob-slugsize {{ category | slugsize }} </div>
+{% endcomment %}
     <div id="#{{ category_name | slugize }}">hellobob-slugize {{ category | slugize }} </div>
     <p></p>
 
