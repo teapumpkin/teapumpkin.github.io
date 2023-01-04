@@ -10,10 +10,11 @@ layout: home
 
 
 <div id="archives">
-{% for category in site.categories %}
+{% assign sorted_categories = site.categories | sort %}
+{% for category in sorted_categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first | slugsize }}{% endcapture %}   
-    <div id="#{{ category_name | slugize }}">hellobob-words {{ category | number_of_words }} </div>
+    <div id="#{{ category_name | slugize }}">hellobob-category {{ category }} </div>
     <p></p>
 
     <h3 class="category-head">{{ category_name }}</h3>
