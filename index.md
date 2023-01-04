@@ -9,6 +9,9 @@ layout: home
 ---
 
 <div id="archives">
+  
+{% comment %}
+  
 {% for category in site.categories %}
   <div class="archive-group">
     {% capture category_name %}{{ category | first }}{% endcapture %}
@@ -18,18 +21,10 @@ layout: home
     <h3 class="category-head">{{ category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in site.categories[category_name] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
-    {% endfor %}
-  </div>
-{% endfor %}
-</div>
 
-{% comment %}
+{% endcomment %}
 
 
-<div id="archives">
 {% assign sorted_categories = site.categories | sort %}
 {% for category in sorted_categories %}
   <div class="archive-group">
@@ -40,6 +35,8 @@ layout: home
     <h3 class="category-head">{{ category_name }}</h3>
     <a name="{{ category_name | slugize }}"></a>
     {% for post in sorted_categorie[category_name] %}
+
+
     <article class="archive-item">
       <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
     </article>
@@ -47,9 +44,6 @@ layout: home
   </div>
 {% endfor %}
 </div>
-
-{% endcomment %}
-
 
 --------
 
