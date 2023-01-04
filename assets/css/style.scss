@@ -11,3 +11,19 @@
     margin: 0 auto;
     display: block;
 }
+
+.sidebar{
+    position: relative;
+    float: right;
+    background: #f4fff5;
+    border-radius: 10px 0 0 10px;
+    border: solid 1px #add8e6;
+    padding: 3px 6px;
+    margin: 6px 0 20px 12px;
+    min-width: 100px;
+    clear: right;
+    font-size: smaller;
+    line-height:1.2 em;
+    /*height: 95%;*/
+
+}
